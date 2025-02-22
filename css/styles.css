@@ -137,6 +137,7 @@ p {
   letter-spacing: 0.02em;
   color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .header-item-list:hover,
@@ -145,10 +146,9 @@ p {
 }
 
 .header-item-list.current {
-  position: relative;
   color: #404bbf;
 }
-.header-item-list.current::after {
+.header-item-list::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -157,6 +157,13 @@ p {
   border-radius: 4px;
   bottom: -1px;
   left: 0;
+  opacity: 0;
+  transition: opacity color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-item-list:hover::after,
+.header-item-list:focus::after,
+.header-item-list.current::after {
+  opacity: 1;
 }
 .header-address {
   font-style: normal;
