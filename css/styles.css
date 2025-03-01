@@ -670,7 +670,9 @@ p {
 .footer-icon-subscibe {
   margin-left: 16px;
 }
-
+.modal-container-block-comment {
+  margin-bottom: 16px;
+}
 .modal-form-con-checkbox {
   margin-bottom: 24px;
 }
