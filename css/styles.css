@@ -393,6 +393,7 @@ p {
   align-items: baseline;
 }
 .footer-div-logo {
+  max-width: 264px;
   margin-right: 120px;
 }
 .logo-footer {
@@ -424,6 +425,9 @@ p {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+.socialmedia-footer {
+  margin-right: 80px;
 }
 .footer-social-name {
   font-weight: 500;
