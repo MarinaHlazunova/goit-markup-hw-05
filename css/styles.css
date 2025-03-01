@@ -477,7 +477,6 @@ p {
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: visibility, opacity, pointer-events;
 }
 .backdrop.is-open {
   visibility: visible;
@@ -516,10 +515,16 @@ p {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.close-btn :focus,
+
 .close-btn :hover {
   background-color: #404bbf;
+  border: none;
 }
+.close-btn :focus {
+  background-color: #404bbf;
+  border: none;
+}
+
 .close-btn-icons {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -561,9 +566,8 @@ p {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-input:focus,
-.modal-form-input:hover {
-  border-color: #404bbf;
+.modal-form-input:focus {
+  border-color: #4d5ae5;
 }
 .modal-form-input::placeholder {
   font: 400 12px / 1.16667 'Roboto', sans-serif;
@@ -666,6 +670,9 @@ p {
 }
 .footer-icon-subscibe {
   margin-left: 16px;
+}
+.modal-container-block {
+  margin-bottom: 16px;
 }
 
 .modal-form-con-checkbox {
